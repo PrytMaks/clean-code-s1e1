@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header .header__img {
   width: 100%;
 }
-.header .more_inf {
+.header .header__info {
   font-family: fantasy, cursive;
 }
 
@@ -37,19 +37,19 @@ body {
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.main__list {
   margin: 0;
   padding: 0px;
 }
-li,
-h3 {
+.main__item,
+.main__title {
   list-style: none;
 }
-input,
-button{
+.main__input,
+.main__btn{
   outline: none;
 }
-button {
+.main__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -58,11 +58,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.main__btn:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
+.main__title,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -98,7 +98,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.main__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -107,20 +107,20 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.main__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.main__item > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.main__item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >  input[type="text"] {
+.main__item >  input[type="text"] {
   width: 226px
 }
 button.delete img {
